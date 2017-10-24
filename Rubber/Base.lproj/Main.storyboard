@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Is5-Wq-TyM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoSans-500.otf">
+            <string>MuseoSans-500</string>
+        </array>
+        <array key="MuseoSans-700.otf">
+            <string>MuseoSans-700</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="xMB-ey-6S4">
+            <objects>
+                <viewController id="Is5-Wq-TyM" customClass="GameViewController" customModule="Rubber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Wz-rF-JZj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forced Fun @ 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFP-4p-g1D">
+                                <rect key="frame" x="50" y="30" width="275" height="32.5"/>
+                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hint: Enter codes to find locations with questions, answer the questions to find the codes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ2-Xd-iTX">
+                                <rect key="frame" x="50" y="70.5" width="275" height="91.5"/>
+                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="41O-02-PqK">
+                                <rect key="frame" x="119" y="222" width="136" height="238"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="8Sd-Fd-d99">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntY-QZ-SDr" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1K0-Uc-RT3" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="53" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="2"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h9-nx-Glj" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="106" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="3"/>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="HTR-c8-OWa"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="TsV-pm-sw2">
+                                        <rect key="frame" x="0.0" y="60" width="136" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-Y4-6iP" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="4"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztu-Uo-4gk" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="53" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anZ-wD-9oO" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="106" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="6"/>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="g82-kM-JEw"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="tFG-0Y-Ec1">
+                                        <rect key="frame" x="0.0" y="120" width="136" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivs-vE-CjR" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="7"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2q-dg-lj2" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="53" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="8"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjV-e1-5HV" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="106" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="fcA-JB-DFS"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DRs-J7-S6n">
+                                        <rect key="frame" x="0.0" y="180" width="136" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn6-qp-kqi" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o0-Ok-DCb" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="53" y="0.0" width="30" height="58"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="38"/>
+                                                <state key="normal" title="0"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4J-pw-v52" customClass="CodeInputButton" customModule="Rubber" customModuleProvider="target">
+                                                <rect key="frame" x="106" y="11" width="30" height="36"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="20"/>
+                                                <state key="normal" title="🔑">
+                                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="1ff-TY-bjR"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17835168393782386" green="0.17835168393782386" blue="0.17835168393782386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sFP-4p-g1D" firstAttribute="leading" secondItem="6aQ-FM-Ype" secondAttribute="leading" constant="50" id="3c5-th-aKr"/>
+                            <constraint firstItem="6aQ-FM-Ype" firstAttribute="trailing" secondItem="sFP-4p-g1D" secondAttribute="trailing" constant="50" id="3r0-h5-Woa"/>
+                            <constraint firstItem="sFP-4p-g1D" firstAttribute="top" secondItem="6aQ-FM-Ype" secondAttribute="top" constant="10" id="SPg-2b-b1k"/>
+                            <constraint firstItem="XQ2-Xd-iTX" firstAttribute="top" secondItem="sFP-4p-g1D" secondAttribute="bottom" constant="8" id="Uyg-sQ-GbP"/>
+                            <constraint firstItem="6aQ-FM-Ype" firstAttribute="trailing" secondItem="XQ2-Xd-iTX" secondAttribute="trailing" constant="50" id="bCp-HL-ZF9"/>
+                            <constraint firstItem="XQ2-Xd-iTX" firstAttribute="leading" secondItem="6aQ-FM-Ype" secondAttribute="leading" constant="50" id="j2K-uo-ykb"/>
+                            <constraint firstItem="41O-02-PqK" firstAttribute="top" secondItem="XQ2-Xd-iTX" secondAttribute="bottom" constant="60" id="o4z-ZQ-CtB"/>
+                            <constraint firstItem="41O-02-PqK" firstAttribute="centerX" secondItem="2Wz-rF-JZj" secondAttribute="centerX" id="uGE-0m-kaI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6aQ-FM-Ype"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iM5-9L-UF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="793.8530734632684"/>
+        </scene>
+    </scenes>
+</document>
